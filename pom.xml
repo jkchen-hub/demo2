@@ -13,6 +13,13 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+<distributionManagement>
+    <repository>
+        <id>proficio-repository</id>
+        <name>Proficio Repository</name>
+        <url>file://${basedir}/target/deploy</url>
+    </repository>
+</distributionManagement>
 
   <dependencies>
     <dependency>
@@ -26,9 +33,6 @@
 	    <groupId>org.apache.commons</groupId>
 	    <artifactId>commons-math3</artifactId>
 	    <version>3.6.1</version>
-	</dependency>
-    
-    
-    
+	</dependency>  
   </dependencies>
 </project>
